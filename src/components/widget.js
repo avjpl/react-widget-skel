@@ -4,8 +4,6 @@ import css from 'classnames';
 import styles from './widget.module.css';
 
 const Widget = ({ message, theme }) => {
-  console.log({ message, theme });
-
   return (
     <div className={css(
       {
@@ -20,7 +18,7 @@ const Widget = ({ message, theme }) => {
 };
 
 Widget.defaultProps = {
-  message: 'default',
+  message: 'widget',
   theme: 'ac',
 };
 

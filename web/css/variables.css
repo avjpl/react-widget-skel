@@ -8,11 +8,13 @@
 @custom-media --media-xl screen and (min-width: 64em);
 
 :root {
+  --red: #992233;
   --black: #000;
   --white: #fff;
   --orange: #ffa500;
   --light-grey: #d8d8d8;
   --dark-grey: #797979;
+  --cornsilk: cornsilk;
 
   --spacen40: -2.5rem; /* -40px */
   --spacen33: -2.0625rem; /* -33px */
