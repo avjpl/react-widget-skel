@@ -1,0 +1,8 @@
+:root {
+  --red: #992233;
+  --cornsilk: cornsilk;
+}
+
+.testCls {
+  color: var(--red);
+}
