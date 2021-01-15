@@ -1,10 +1,12 @@
+@import '@cssVariables';
+
 .bg {
   display: flex;
   background: var(--cornsilk);
   height: 100vh;
   justify-content: center;
   align-items: center;
-  font-size: var(--font-size-xxl);  
+  font-size: var(--font-size-xxl);
 }
 
 .wc {
