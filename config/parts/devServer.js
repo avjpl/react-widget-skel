@@ -9,6 +9,7 @@ module.exports = () => ({
       static: '/Volumes/wpr/dist',
       liveReload: true,
       waitForBuild: true,
+      historyFallback: true,
     }),
     new WebpackPluginRamdisk(),
   ],
