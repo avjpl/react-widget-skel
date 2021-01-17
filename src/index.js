@@ -5,10 +5,14 @@ import Widget from './components/widget';
 
 import '../web/css/index.css';
 
-if (!window?.mode) {
-  render(<Widget />, document.getElementById('app'));
+export const init = config => {
+  const {
+    attachTo,
+    ...rest
+  } = config;
+  render(<Widget {...rest} />, document.getElementById(attachTo));
 }
 
-export const init = config => {
-  render(<Widget {...config} />, document.getElementById('app'));
+if (!window?.mode) {
+  render(<Widget />, document.getElementById('widget'));
 }

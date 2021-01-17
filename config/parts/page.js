@@ -7,7 +7,7 @@ const {
 
 module.exports = ({ title, mode }) => ({
   plugins: [new MiniHtmlWebpackPlugin({
-    context: { title, ...(mode === 'development' ? { body: '<div id="app"></div>' } : {}) },
+    context: { title, ...(mode === 'development' ? { body: '<div id="widget"></div>' } : {}) },
     ...(
       mode !== 'development'
         ? {
@@ -42,12 +42,13 @@ module.exports = ({ title, mode }) => ({
                 ${cssTags}
               </head>
               <body>
-                <div id="app"></div>
+                <div id="widget"></div>
                 ${jsTags}
                 <script>
                   const config = {
                     message: 'it working!!',
-                    theme: 'ac'
+                    theme: 'ac',
+                    attachTo: 'widget'
                   };
 
                   const mode = 'bsr';

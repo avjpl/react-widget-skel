@@ -32,7 +32,7 @@ module.exports = () => {
     },
     plugins: [
       new MiniCssExtractPlugin({
-        filename: 'widget.[contenthash:4].css',
+        filename: 'widget.css',
         ignoreOrder: false,
       }),
     ],

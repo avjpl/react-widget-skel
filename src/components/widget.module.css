@@ -1,18 +1,21 @@
 @import '@cssVariables';
 
 .bg {
-  display: flex;
-  background: var(--cornsilk);
-  height: 100vh;
-  justify-content: center;
   align-items: center;
-  font-size: var(--font-size-xxl);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
 }
 
 .wc {
+  background: var(--dark-grey);
   color: var(--red);
+  font-size: var(--font-size-xxl);
 }
 
 .ac {
+  background: var(--cornsilk);
   color: var(--orange);
+  font-size: var(--font-size-xxl);
 }
