@@ -10,7 +10,7 @@ const {
 const productionConfig = merge([
   {
     output: {
-      path: path.resolve(__dirname, '..', 'dist'),
+      path: path.resolve(__dirname, '../..', 'dist'),
       filename: 'widget.js',
       library: 'Widget',
       libraryTarget: 'umd',

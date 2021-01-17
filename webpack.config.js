@@ -1,9 +1,9 @@
 const { merge } = require('webpack-merge');
 const { mode } = require('webpack-nano/argv');
 
-const commonConfig = require('./config/webpack.common');
-const productionConfig = require('./config/webpack.production');
-const developmentConfig = require('./config/webpack.development');
+const commonConfig = require('./config/webpack/webpack.common');
+const productionConfig = require('./config/webpack/webpack.production');
+const developmentConfig = require('./config/webpack/webpack.development');
 
 const getConfig = (mode) => {
   process.env.NODE_ENV = mode;
