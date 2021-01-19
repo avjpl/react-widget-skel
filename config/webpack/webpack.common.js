@@ -10,9 +10,6 @@ const {
 } = require('./parts');
 
 const commonConfig = mode => merge([
-  {
-    entry: ['./src'],
-  },
   page({ title: 'Demo', mode }),
   svg(),
   javaScript(),

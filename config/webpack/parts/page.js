@@ -51,8 +51,6 @@ module.exports = ({ title, mode }) => ({
                     attachTo: 'widget'
                   };
 
-                  const mode = 'bsr';
-
                   window.Widget.init(config);
                 </script>
               </body>

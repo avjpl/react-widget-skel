@@ -1,9 +1,10 @@
 import React from 'react';
+import { render } from 'test-utils';
+
 import Widget from './widget';
-import { render } from '@testing-library/react';
 
 test('renders', () => {
   const props = { message: 'testing', theme: 'wc' }
-  const {debug} = render(<Widget {...props} />);
-  debug();
+  const { getByText } = render(<Widget {...props} />);
+  expect(getByText('testing')).toBeInTheDocument();
 });

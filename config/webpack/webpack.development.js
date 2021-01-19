@@ -4,7 +4,10 @@ const { devServer, css, images } = require('./parts');
 
 const developmentConfig = merge([
   {
-    entry: ['webpack-plugin-serve/client'],
+    entry: [
+      './src/index.dev.js',
+      'webpack-plugin-serve/client'
+    ],
   },
   devServer(),
   css(),

@@ -7,12 +7,8 @@ import '../web/css/index.css';
 
 export const init = config => {
   const {
-    attachTo,
+    attachTo = 'widget',
     ...rest
   } = config;
   render(<Widget {...rest} />, document.getElementById(attachTo));
-}
-
-if (!window?.mode) {
-  render(<Widget />, document.getElementById('widget'));
 }
